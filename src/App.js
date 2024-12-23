@@ -5,6 +5,7 @@ import MartineQ2Screen from './pages/martine/numberTwo';
 import MartineQ3Screen from './pages/martine/numberThree';
 import MartineQ4Screen from './pages/martine/numberFour';
 import MartineQ5Screen from './pages/martine/lastQuestion';
+import VeroScreen from './pages/vero/q1';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path="/martine/er/hoe/sporsmaal/1/1/1" element={<MartineQ3Screen />} />
         <Route path="/martine/er/hoe/sporsmaal/nummer/4" element={<MartineQ4Screen />} />
         <Route path="/martine/er/hoe/sporsmaal/nummer/final" element={<MartineQ5Screen />} />
+        <Route path="/vero" element={<VeroScreen />} />
       </Routes>
     </Router>
   );
