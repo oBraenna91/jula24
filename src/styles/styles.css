@@ -13755,6 +13755,7 @@ fieldset:disabled .btn {
 
 .card-question {
   width: 25vw;
+  background-color: lightcoral;
 }
 
 .container4 .trio1 {
@@ -13770,19 +13771,19 @@ fieldset:disabled .btn {
   0% {
     -webkit-transform: rotateY(0);
             transform: rotateY(0);
-    background-color: #007bff;
+    background-color: lightcoral;
     /* Original farge */
   }
   50% {
     -webkit-transform: rotateY(180deg);
             transform: rotateY(180deg);
-    background-color: #28a745;
+    background-color: lightyellow;
     /* Ny farge */
   }
   100% {
     -webkit-transform: rotateY(360deg);
             transform: rotateY(360deg);
-    background-color: #ffc107;
+    background-color: lightcoral;
     /* Endelig farge */
   }
 }
@@ -13791,19 +13792,19 @@ fieldset:disabled .btn {
   0% {
     -webkit-transform: rotateY(0);
             transform: rotateY(0);
-    background-color: #007bff;
+    background-color: lightcoral;
     /* Original farge */
   }
   50% {
     -webkit-transform: rotateY(180deg);
             transform: rotateY(180deg);
-    background-color: #28a745;
+    background-color: lightyellow;
     /* Ny farge */
   }
   100% {
     -webkit-transform: rotateY(360deg);
             transform: rotateY(360deg);
-    background-color: #ffc107;
+    background-color: lightcoral;
     /* Endelig farge */
   }
 }

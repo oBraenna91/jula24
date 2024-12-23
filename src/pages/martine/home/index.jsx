@@ -16,13 +16,16 @@ export default function MartineHomeScreen() {
     const cardMessages = [
         'Mamma? Nja, det kan diskuteres! 🤔',
         'Mormor? Godt forslag, men kanskje ikke helt riktig! 😅',
-        'Martine? Spot on, selvfølgelig er det deg! 🎉'
+        'Martine? Spot on, selvfølgelig er det deg! 🎉 Da kan du gå opp å sjekke under horeputa! Nei unnskyld, hodeputa! (Ekstra gøy siden hore betyr puta?)'
     ];
 
     const handleCardClick = (message, cardId) => {
-        setSelectedCard(cardId);
-        setModalMessage(message);
-        setShowModal(true);
+        setSelectedCard(cardId); // Marker kortet som valgt
+        setModalMessage(message); // Sett meldingen
+        // Forsink åpningen av modalen
+        setTimeout(() => {
+            setShowModal(true);
+        }, 300); // 800ms forsinkelse (tilpass etter animasjonslengde)
     };
 
     const handleModalClose = () => {
@@ -67,7 +70,7 @@ export default function MartineHomeScreen() {
                             key={index}
                             className={`card shadow ${
                                 selectedCard === index ? 'spinning-card' : ''
-                            } bg-primary card-question mt-5`}
+                            } card-question mt-5`}
                             onClick={() =>
                                 handleCardClick(cardMessages[index], index)
                             }
