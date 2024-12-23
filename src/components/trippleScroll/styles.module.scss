@@ -1,0 +1,29 @@
+.container {
+    display: flex;
+    width: 100%;
+    justify-content: center; /* Start med begge barna i midten */
+    transition: justify-content 0.6s ease-out; /* Jevn overgang for justify-content */
+    position: relative;
+    margin-bottom: 5%;
+    // padding-left: 2%;
+    // padding-right: 2%;
+}
+
+/* Første child starter overlappet i midten */
+.child1, .child2, .child3 {
+    opacity: 1;
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    width:30%;
+}
+
+/* Når synlig, flytt child1 til venstre */
+.visible .child1 {
+    opacity: 1;
+    transform: translateX(-35%); /* Flytter 50% mot venstre */
+}
+
+/* Når synlig, flytt child2 til høyre */
+.visible .child3 {
+    opacity: 1;
+    transform: translateX(35%); /* Flytter 50% mot høyre */
+}
