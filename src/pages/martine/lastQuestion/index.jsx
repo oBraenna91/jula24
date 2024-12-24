@@ -14,9 +14,9 @@ export default function MartineQ5Screen() {
     const [selectedCard, setSelectedCard] = useState(null);
 
     const cardMessages = [
-        'Ja det skal vi!!!!',
+        'Ja, det bør du faktisk, men det er ikke riktig svar',
         'Neida, du skal få den i dag!',
-        'Ja, det bør du faktisk, men det er ikke riktig svar'
+        'Ja det skal vi!!!!'
     ];
 
     const handleCardClick = (message, cardId) => {
@@ -50,7 +50,7 @@ export default function MartineQ5Screen() {
             </ScrollingComponent>
             <ScrollingComponent containerName="container4">
                     <ScrollingTrio containerName="trio1">
-                    {['Vi skal leke tampen brenner', 'Du får den i morgen', 'Dra til helvete'].map((name, index) => (
+                    {['Dra til helvete', 'Du får den i morgen', 'Vi skal leke tampen brenner'].map((name, index) => (
                         <div
                             key={index}
                             className={`card shadow ${
